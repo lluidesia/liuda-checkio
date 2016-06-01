@@ -1,10 +1,10 @@
-import datetime 
+from datetime import date
 
 def days_diff(date1, date2):
     """
         Find absolute diff in days between dates
     """
-    daysdiff=abs((datetime.datetime(*date1)-datetime.datetime(*date2)).days)
+    daysdiff=abs((date(*date1)-date(*date2)).days)
     print(daysdiff)
     
     return daysdiff
